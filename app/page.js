@@ -26,7 +26,7 @@ export default function Home() {
   }
 
   const handleDelete = (currentID) => {
-    console.log("Delete Triggered");
+    // console.log("Delete Triggered");
     const updatedTodos = todos.filter(currentToDo => currentToDo.ID !== currentID);
     setTodos(updatedTodos);
   }
@@ -63,7 +63,7 @@ export default function Home() {
 
   useEffect(() => {
     localStorage.setItem("todos", JSON.stringify(todos));
-    console.log(`Saved Todo's`, todos);
+    // console.log(`Saved Todo's`, todos);
   }, [todos])
 
 
@@ -119,6 +119,7 @@ export default function Home() {
             </div>
           </div>
           <div className="tasks-wrapper overflow-auto flex flex-col gap-5  rounded-[20px]  p-2 w-full ">
+            {todos.length === 0 ? <p className="text-md text-[#C1C2CB] mx-auto mt-40">No Tasks Yet, Add one Below</p>:null }
             {todos.map((todo) => {
               if (todo.Completed && showCompleted == false) {
                 return null
