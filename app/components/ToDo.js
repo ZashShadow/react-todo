@@ -19,9 +19,7 @@ const ToDo = (props) => {
     setChecked(!checked)
     props.onToggleCompleted(props.ID);
   }
-  const handleDelete = ()=>{
-    props.onDelete(props.ID);
-  };
+
 
 
   return (
