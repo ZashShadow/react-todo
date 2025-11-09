@@ -1,36 +1,92 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# React ToDo List
+
+A simple ToDo list application built with React.
+
+## Overview
+
+This project is a minimal ToDo list app that helps you manage tasks efficiently. It was created as a practice project to explore the core concepts and features of [React](https://reactjs.org/).
+
+## Features
+
+- Add new tasks
+- Mark tasks as completed
+- Delete tasks from your list
+- Responsive and clean user interface
+
+## Motivation
+
+I built this ToDo list app to practice and improve my React skills. The main goals were to:
+
+- Understand React component structure
+- Learn about state management using React hooks
+- Implement simple interactions and UI updates
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- [Node.js](https://nodejs.org/) v14 or newer
+- [npm](https://www.npmjs.com/) (comes with Node.js) or [yarn](https://yarnpkg.com/)
+
+### Installation
+
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/ZashShadow/react-todo.git
+    cd react-todo
+    ```
+
+2. Install dependencies:
+
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
+
+3. Start the development server:
+
+    ```bash
+    npm start
+    # or
+    yarn start
+    ```
+
+4. Open [http://localhost:3000](http://localhost:3000) to view the app in your browser.
+
+## Usage
+
+- Type a new task in the input field and press Enter or click the "Add" button to add it to your list.
+- Click the checkbox next to a task to mark it as completed.
+- Click the "Delete" button  (a trash can icon) to remove a task.
+
+## Built With
+
+- [React](https://reactjs.org/) – JavaScript library for user interfaces
+- (Optionally mention: CSS Modules, styled-components, or any other tools you use)
+
+## Folder Structure
+
+```
+react-todo/
+├── public/
+├── src/
+│   ├── components/
+│   ├── App.js
+│   └── index.js
+├── package.json
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Contributing
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+This repository is primarily for practice and learning, but feel free to fork it and submit pull requests!
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## License
 
-## Learn More
+This project is open source and available under the [MIT License](LICENSE).
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+*Created by [ZashShadow](https://github.com/ZashShadow) to practice React development.*
